@@ -1,0 +1,30 @@
+npm init , npm express
+ app.use ->listen to every kind of req. (mtlb listen krke track krta h ki hmare ps request aarhi h)
+ app.use((req,res) =>{
+    console.log("request received")
+ })
+2.Ab request k basisp response kaise snd krein?
+res.send -> it sends http response from  server.
+
+3. routing-> It is a process of selecting a path for traffic in a network or between or across different network.
+aap.get('/apple' , (req,res) =>{                -> a. path  b. argument 
+                                                   b.app.get('*')-> for rest of the path which is not there
+    res.send({
+        name: "Apple",
+        color: "red"
+    }
+
+    )
+})
+
+uses of express a.listen   b. parsing    c.
+
+npm install -g nodemon  nodemon index.js
+
+
+path Parameter->it is not possible to write all the path.so for this
+app.get("/:username", (req,res) =>{         app.get("/:username/:id)
+    console.log(req.params);
+    res.send("hello, i am a root);
+})
+queryString
