@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genres</title>
+</head>
+<body>
+    <h1>Select a Genre</h1>
+    <ul>
+        <% genres.forEach(function(genre) { %>
+            <li><a href="/Books/genre/<%= genre %>"><%= genre %></a></li>
+        <% }) %>
+    </ul>
+</body>
+</html>

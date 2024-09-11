@@ -6,5 +6,5 @@ app.get('/',(req,res) =>{
 })
 const port = 8080;
 app.listen(port,()=>{
-    console.log('server is runing on port 8080'.bgGreen)
+    console.log('server is runing on port 8080');
 });
